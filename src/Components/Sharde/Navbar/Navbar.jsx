@@ -1,12 +1,13 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 const Navbar = () => {
     const navlinks = <>
-        <li><a>Home</a></li>
-        <li><a>About</a></li>
+        <li><a href='/'>Home</a></li>
+        <li><a href='#About'>About</a></li>
         <li><a href='#skill'>Skills</a></li>
         <li><a href='#Projects'>Project</a></li>
-        <li><a>Contruct-Us</a></li>
+        <NavLink to='/Contact'><li><button>Contact</button></li></NavLink>
     </>
     return (
         <div className="navbar bg-slate-50 fixed z-10 mx-auto max-w-7xl">
